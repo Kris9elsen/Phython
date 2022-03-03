@@ -1,1 +1,1 @@
-# Phython
+This is my repository with all the scripts / programs i have mad and is making, for learning Python
