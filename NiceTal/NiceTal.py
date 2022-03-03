@@ -1,6 +1,3 @@
-from pickle import FALSE, TRUE
-
-
 times = input("Enter amount of times to add: ")
 times = int(times)
 res = 1
