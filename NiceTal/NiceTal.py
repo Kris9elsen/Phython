@@ -3,7 +3,6 @@ times = int(times)
 res = 1
 i = 0
 
-
 while i < times:
     print(i + 1, " : ",  res)
     res = res * 2
