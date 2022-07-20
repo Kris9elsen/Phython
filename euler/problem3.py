@@ -16,4 +16,27 @@ for x in range(len(numList)):
             if (h > len(numList)-1):
                 break
 nums.sort(reverse = True)
-print(nums)
+
+def removeDupli():
+    for x in range(len(nums)-1):
+        if nums[x] == nums[x+1]:
+            nums.pop(x+1)
+            removeDupli()
+
+removeDupli()
+
+
+
+for x in range(len(nums)):
+    divMax = nums[x] // 2
+    print("check Num", nums[x])
+    for i in range(divMax):
+        if x == 2:
+            break
+        if i > 1:
+            if nums[x] % i == 0:
+                print(nums[x], " Is dividable with", i)
+                break
+        if i == divMax-1:
+            print("Higest is ", nums[x])
+            exit()
